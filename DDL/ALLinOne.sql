@@ -19,17 +19,17 @@ USE All_In;
 GO
 --Копирую данные из таблицы PV_521_DDL(Кроме ключей, их по синтаксису надо указывать отдельно)
 --https://learn.microsoft.com/ru-ru/sql/t-sql/queries/select-into-clause-transact-sql?view=sql-server-ver17
---SELECT * INTO Directions						FROM PV_521_DDL.dbo.Directions;
---SELECT * INTO Groups							FROM PV_521_DDL.dbo.Groups;
+--SELECT * INTO Directions							FROM PV_521_DDL.dbo.Directions;
+--SELECT * INTO Groups								FROM PV_521_DDL.dbo.Groups;
 --SELECT * INTO Students							FROM PV_521_DDL.dbo.Students;
 --SELECT * INTO Teachers							FROM PV_521_DDL.dbo.Teachers;
---SELECT * INTO Disciplines						FROM PV_521_DDL.dbo.Disciplines;
+--SELECT * INTO Disciplines							FROM PV_521_DDL.dbo.Disciplines;
 --SELECT * INTO DisciplinesDirectionsRelation		FROM PV_521_DDL.dbo.DisciplinesDirectionsRelation;
---SELECT * INTO TeachersDisciplinesRelation		FROM PV_521_DDL.dbo.TeachersDisciplinesRelation;
---SELECT * INTO RequiredDisciplines				FROM PV_521_DDL.dbo.RequiredDisciplines;
+--SELECT * INTO TeachersDisciplinesRelation			FROM PV_521_DDL.dbo.TeachersDisciplinesRelation;
+--SELECT * INTO RequiredDisciplines					FROM PV_521_DDL.dbo.RequiredDisciplines;
 --SELECT * INTO DependentDisciplines				FROM PV_521_DDL.dbo.DependentDisciplines;
 --SELECT * INTO Schedule							FROM PV_521_DDL.dbo.Schedule;
---SELECT * INTO Grades							FROM PV_521_DDL.dbo.Grades;
+--SELECT * INTO Grades								FROM PV_521_DDL.dbo.Grades;
 --SELECT * INTO Exams								FROM PV_521_DDL.dbo.Exams;
 --SELECT * INTO HomeWorks							FROM PV_521_DDL.dbo.HomeWorks;
 --SELECT * INTO ResultsHW							FROM PV_521_DDL.dbo.ResultsHW;
