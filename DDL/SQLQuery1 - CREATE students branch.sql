@@ -1,19 +1,32 @@
-﻿USE PV_521_DDL;
+﻿--USE PV_521_DDL;
+USE Prover04ka;
 
-CREATE TABLE Directions
-(
-	direction_id	TINYINT				PRIMARY KEY,
-	direction_name	NVARCHAR(150)		NOT NULL,
-);
+--CREATE TABLE Directions
+--(
+--	direction_id	TINYINT				PRIMARY KEY,
+--	direction_name	NVARCHAR(150)		NOT NULL,
+--);
 
-CREATE TABLE Groups
-(
-	group_id		INT					PRIMARY KEY,
-	group_name		NVARCHAR(24)		NOT NULL,
-	direction		TINYINT				NOT NULL		--Описание поля
-	CONSTRAINT	FK_Groups_Direction		FOREIGN KEY REFERENCES	Directions(direction_id)
-	--Constraint	FK_ИМЯ_ВнешнегоКлюча	FOREIGN KEY REFERENCES	Таблица(первичный_ключ_внешней_таблицы)
-);
+--CREATE TABLE Groups
+--(
+--	group_id		INT					PRIMARY KEY,
+--	group_name		NVARCHAR(24)		NOT NULL,
+--	direction		TINYINT				NOT NULL		--Описание поля
+--	CONSTRAINT	FK_Groups_Direction		FOREIGN KEY REFERENCES	Directions(direction_id)
+--	--Constraint	FK_ИМЯ_ВнешнегоКлюча	FOREIGN KEY REFERENCES	Таблица(первичный_ключ_внешней_таблицы)
+--);
+
+--CREATE TABLE Groups
+--(
+--	group_id		INT						PRIMARY KEY,
+--	group_name		NVARCHAR(24)			NOT NULL,
+--	direction		TINYINT					NOT NULL	
+--	CONSTRAINT		FK_Groups_Direction		FOREIGN KEY									REFERENCES Directions(direction_id),
+--	form			INT						NOT NULL,
+--	payment			INT						NOT NULL,
+--	CONSTRAINT		FK_Groups_DF			FOREIGN KEY (direction, form)				REFERENCES DirectionsForms(direction, form),
+--	CONSTRAINT		FK_Groups_DP			FOREIGN KEY (direction, payment)			REFERENCES DirectionsPayment(direction, payment)
+--);
 
 CREATE TABLE Students
 (
@@ -26,4 +39,4 @@ CREATE TABLE Students
 	CONSTRAINT		FK_Students_Group	FOREIGN KEY REFERENCES	Groups(group_id)
 );
 
---DROP TABLE Students, Groups, Directions;
+--DROP TABLE Directions, Groups, Students;

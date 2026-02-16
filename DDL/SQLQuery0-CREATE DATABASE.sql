@@ -1,20 +1,39 @@
 --SQLQuery0-CREATE DATABASE.sql
 
 
-CREATE DATABASE PV_521_DDL
-ON
-(
-	NAME		=	PV_521_DDL,
-	FILENAME	=	'C:\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\PV_521_DDL.mdf',
-	SIZE		=	  8 MB,
-	MAXSIZE		=	500 MB,
-	FILEGROWTH	=	  8 MB
-)
-LOG ON
-(
-	NAME		=	PV_521_DDL_log,
-	FILENAME	=	'C:\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\PV_521_DDL.ldf',
-	SIZE		=	  8 MB,
-	MAXSIZE		=	500 MB,
-	FILEGROWTH	=	  8 MB
-)
+--CREATE DATABASE PV_521_DDL
+--ON
+--(
+--	NAME		=	PV_521_DDL,
+--	FILENAME	=	'C:\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\PV_521_DDL.mdf',
+--	SIZE		=	  8 MB,
+--	MAXSIZE		=	500 MB,
+--	FILEGROWTH	=	  8 MB
+--)
+--LOG ON
+--(
+--	NAME		=	PV_521_DDL_log,
+--	FILENAME	=	'C:\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\PV_521_DDL.ldf',
+--	SIZE		=	  8 MB,
+--	MAXSIZE		=	500 MB,
+--	FILEGROWTH	=	  8 MB
+--)
+
+--CREATE DATABASE Prover04ka
+--ON
+--(
+--	NAME		=	Prover04ka,
+--	FILENAME	=	'C:\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\Prover04ka.mdf',
+--	SIZE		=	  8 MB,
+--	MAXSIZE		=	500 MB,
+--	FILEGROWTH	=	  8 MB
+--)
+--LOG ON
+--(
+--	NAME		=	Prover04ka_log,
+--	FILENAME	=	'C:\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\Prover04ka.ldf',
+--	SIZE		=	  8 MB,
+--	MAXSIZE		=	500 MB,
+--	FILEGROWTH	=	  8 MB
+-
+-)

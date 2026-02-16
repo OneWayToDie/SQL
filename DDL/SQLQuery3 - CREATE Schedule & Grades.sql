@@ -1,5 +1,6 @@
 --SQLQuery3 - CREATE Schedule & Grades.sql
-USE PV_521_DDL;
+--USE PV_521_DDL;
+USE Prover04ka;
 
 CREATE TABLE Schedule
 (
@@ -26,8 +27,8 @@ CREATE TABLE Grades
 
 CREATE TABLE Exams
 (
-	student				INT					CONSTRAINT FK_Exams_Students FOREIGN KEY REFERENCES Students(student_id),
-	discipline			SMALLINT			CONSTRAINT FK_Exams_Discipline FOREIGN KEY REFERENCES Disciplines(discipline_id),
+	student				INT					CONSTRAINT FK_Exams_Students	FOREIGN KEY REFERENCES Students(student_id),
+	discipline			SMALLINT			CONSTRAINT FK_Exams_Discipline	FOREIGN KEY REFERENCES Disciplines(discipline_id),
 	grade				TINYINT				CONSTRAINT CK_Exam_Grade		CHECK	(grade > 0 AND grade <= 12)
 );
 

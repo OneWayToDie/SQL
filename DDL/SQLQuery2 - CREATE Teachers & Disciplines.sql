@@ -1,5 +1,7 @@
 --SQLQuery2 - CREATE Teachers & Disciplines.sql
-USE PV_521_DDL;
+--USE PV_521_DDL;
+USE Prover04ka;
+
 
 CREATE TABLE Teachers
 (
