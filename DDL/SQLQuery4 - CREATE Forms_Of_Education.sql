@@ -1,5 +1,5 @@
---USE PV_521_DDL;
-USE Prover04ka;
+USE PV_521_DDL;
+--USE Prover04ka;
 
 --CREATE TABLE FormsOfEducation	--Очка, заочка, дистант
 --(
