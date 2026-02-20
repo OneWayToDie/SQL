@@ -510,10 +510,10 @@ USE PV_521_DDL;
 --	   ,(140, N'2025-03-14', N'18:30:00', 1, 1, 2, N'Основы информационных технологий', 1)
 --;
 
-SELECT 
-		 [date]		AS	N'Дата'
-		,[time]		AS	N'Время занятий'
-		,[subject]	AS	N'Тема'
-		,[status]	AS	N'Статус'
-FROM Schedule ORDER BY [date]
-;
+--SELECT 
+--		 [date]		AS	N'Дата'
+--		,[time]		AS	N'Время занятий'
+--		,[subject]	AS	N'Тема'
+--		,[status]	AS	N'Статус'
+--FROM Schedule ORDER BY [date]
+--;
