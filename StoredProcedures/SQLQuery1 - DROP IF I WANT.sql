@@ -1,0 +1,5 @@
+--SQLQuery1 - DROP IF I WANT
+
+--DROP PROCEDURE IF EXISTS sp_InsertLesson;
+--DROP PROCEDURE IF EXISTS sp_InsertScheduleStacionar;
+--GO
