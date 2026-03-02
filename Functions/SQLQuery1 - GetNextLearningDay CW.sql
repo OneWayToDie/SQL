@@ -3,7 +3,7 @@ USE PV_521_Import;
 SET DATEFIRST 1;
 GO
 
-CREATE FUNCTION GetNextLearningDay_CW(@group_name AS NCHAR) RETURNS TINYINT
+CREATE OR ALTER FUNCTION GetNextLearningDay_CW(@group_name AS NCHAR(10)) RETURNS TINYINT
 AS
 BEGIN
 	DECLARE @group_id	AS INT		=	(SELECT		group_id FROM Groups	WHERE group_name = @group_name);
