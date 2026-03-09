@@ -16,5 +16,14 @@ BEGIN
 	IF @interval < 0	SET @interval = 7 + @interval;
 	IF @interval = 0	SET @interval = 7;
 	DECLARE @next_date	AS DATE		=	DATEADD(DAY, @interval, @date);
-	RETURN	@next_date;
+
+	
+--	IF EXISTS (SELECT holiday FROM DaysOFF WHERE [date] = @next_date)
+--BEGIN
+--    SET @next_date = dbo.GetNextLearningDate_CW(@group_name, @next_date);
+--END
+RETURN
+IIF(NOT EXISTS (SELECT holiday FROM DaysOFF WHERE [date] = @next_date), @next_date, dbo.GetNextLearningDate_CW(@group_name, @next_date));
+
+	--RETURN	@next_date;
 END
