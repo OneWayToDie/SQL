@@ -34,6 +34,7 @@ AS
 	WHILE	(@lesson_number  <	@number_of_lessons)
 	BEGIN
 			SET @date = dbo.GetNextLearningDate_CW(@group_name, @date);
+
 			SET @time = @start_time;
 			--IF EXISTS (SELECT holiday FROM DaysOFF WHERE [date]=@date)CONTINUE;
 			EXEC	sp_InsertLesson @group, @discipline, @teacher, @date, @time OUTPUT, @lesson_number OUTPUT;
